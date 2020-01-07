@@ -1,0 +1,183 @@
+$white: #ffffff;
+$light-white: #f9fafc;
+$blue: #0b457f;
+$light-grey: #adb5bd;
+$light-blue: #e8e9e2;
+$light-bg: #f9fafc;
+.dashboard {
+  .left-section {
+    padding: 20px 25px;
+    height: 100vh;
+    background-color: $light-white;
+    .header {
+      margin-bottom: 20px;
+      .salutation {
+        color: $blue;
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 0;
+        img {
+          height: 25px;
+        }
+      }
+      p {
+        font-size: 13px;
+        color: $light-grey;
+      }
+      .date {
+        text-align: center;
+        div {
+          background-color: $light-blue;
+          font-size: 13px;
+          color: $blue;
+          padding: 10px 15px;
+          border-radius: 10px;
+          display: inline-block;
+          i {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .status-card {
+      .c-card {
+        position: relative;
+        border-radius: 20px;
+        display: block;
+        background-color: $white;
+        height: 90px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        .left {
+          width: 70%;
+          padding: 20px;
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          height: 100%;
+          .heading {
+            color: $blue;
+            font-size: 12px;
+            font-weight: 500;
+            i {
+              padding-left: 5px;
+              color: $light-grey;
+            }
+            &.heart {
+              color: #e6644b;
+            }
+            &.running {
+              color: #50e64b;
+            }
+            &.calories {
+              color: #f3e84e;
+            }
+          }
+          .value {
+            color: #000000;
+            font-weight: 600;
+            font-size: 25px;
+            span {
+              font-size: 15px;
+              color: $light-grey;
+              font-weight: 500;
+            }
+          }
+        }
+        .right {
+          width: 30%;
+          height: 100%;
+          position: absolute;
+          display: inline-block;
+          right: 0;
+          bottom: 0;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          overflow: hidden;
+          background: #e2e2e2;
+          .percentage {
+            background: #28a745;
+            height: 82%;
+            text-align: center;
+            font-size: 12px;
+            padding-top: 2px;
+            border-bottom-right-radius: 20px;
+            bottom: 0;
+            position: inherit;
+            width: 100%;
+            &.running {
+              background: #46a0ae;
+              height: 39%;
+            }
+            &.calories {
+              background: #a6a7b2;
+              height: 68%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right-section {
+    padding: 20px 25px;
+    height: 100vh;
+    background-color: $white;
+    .header {
+      display: block;
+      margin-bottom: 20px;
+      .message {
+        display: inline-block;
+        background: $light-bg;
+        padding: 7px 12px;
+        border-radius: 15px;
+        margin-right: 10px;
+        color: $blue;
+        position: relative;
+        &.unread {
+          span {
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            right: 5px;
+            background: red;
+          }
+        }
+      }
+      .user {
+        float: right;
+        span {
+          color: #000000;
+          font-size: 13px;
+          font-weight: 600;
+          padding-right: 10px;
+        }
+        img {
+          border-radius: 8px;
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+
+    .trainers{
+      .heading{
+        position: relative;
+        span{
+          font-size: 12px;
+          font-weight: 600;
+          color: #000000;
+        }
+        i{
+          float: right;
+          color: $light-grey;
+          font-size: 12px;
+          position: absolute;
+          top: 53%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

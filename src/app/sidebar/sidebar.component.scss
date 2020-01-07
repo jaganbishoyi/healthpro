@@ -1,0 +1,33 @@
+$white: #ffffff;
+$light-blue: #504da8;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  & > div {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+    &.menu {
+      color: $white;
+    }
+    &.logo {
+      margin-top: 15px;
+      background-color: $white;
+      margin-bottom: 40px;
+      font-size: 12px;
+      font-weight: 700;
+      font-style: italic;
+    }
+    &.active {
+      background-color: $light-blue;
+    }
+  }
+}
