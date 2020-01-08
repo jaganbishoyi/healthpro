@@ -54,6 +54,33 @@
             </div>
           </div>
         </div>
+        <div class="col-md-12 chart">
+          <div class="card card-body">
+            <div class="row">
+              <div class="col-md-9">
+                <h6>Activity</h6>
+                <div style="display: block;height: 180px;">
+                  <canvas id="chart" height="180" baseChart [datasets]="barChartData" [labels]="barChartLabels"
+                    [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend"
+                    [chartType]="barChartType">
+                  </canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="goal">
+                  <h4>You done today's goals!</h4>
+                  <div class="percentage">
+                    100%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-4 mb-2">
+          <agm-map [latitude]='latitude' [longitude]='longitude' [mapTypeId]='mapType'>
+          </agm-map>
+        </div>
       </div>
     </div>
     <div class="col-md-3 right-section">

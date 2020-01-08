@@ -8,11 +8,11 @@ import { ActivatedRoute, Router, Event, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
   title = 'healthpro';
-  active = '';
+  active = '/dashboard';
   constructor(public activatedRoute: ActivatedRoute, public router: Router){
     router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd ) {
-        this.active = event.url;
+        this.active = event.urlAfterRedirects;
       }
     });
   }

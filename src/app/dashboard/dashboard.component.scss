@@ -41,7 +41,7 @@ $light-bg: #f9fafc;
     .status-card {
       .c-card {
         position: relative;
-        border-radius: 20px;
+        border-radius: 10px;
         display: block;
         background-color: $white;
         height: 90px;
@@ -89,8 +89,8 @@ $light-bg: #f9fafc;
           display: inline-block;
           right: 0;
           bottom: 0;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
           overflow: hidden;
           background: #e2e2e2;
           .percentage {
@@ -99,7 +99,7 @@ $light-bg: #f9fafc;
             text-align: center;
             font-size: 12px;
             padding-top: 2px;
-            border-bottom-right-radius: 20px;
+            border-bottom-right-radius: 10px;
             bottom: 0;
             position: inherit;
             width: 100%;
@@ -111,6 +111,42 @@ $light-bg: #f9fafc;
               background: #a6a7b2;
               height: 68%;
             }
+          }
+        }
+      }
+    }
+    .chart {
+      margin-top: 25px;
+      .card.card-body {
+        border-radius: 10px;
+        .goal {
+          height: 190px;
+          width: 100%;
+          background: #383488;
+          border-radius: 15px;
+          padding: 40px;
+          h4 {
+            font-size: 14px;
+            margin: 0 auto;
+            color: #ffffff;
+            text-align: center;
+            font-weight: 700;
+          }
+          .percentage {
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+            color: green;
+            background: #ffffff;
+            padding: 10px;
+            width: 60px;
+            height: 60px;
+            margin: 20px auto 0 auto;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid;
           }
         }
       }
@@ -178,5 +214,11 @@ $light-bg: #f9fafc;
         }
       }
     }
+  }
+}
+agm-map {
+  height: 250px;
+  .agm-map-container-inner.sebm-google-map-container-inner {
+    border-radius: 10px !important;
   }
 }

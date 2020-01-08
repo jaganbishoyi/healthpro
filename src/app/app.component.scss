@@ -3,12 +3,13 @@ $white: #ffffff;
 .full-layout {
   .column {
     &.sidebar {
-      width: 6%;
+      width: 80px;
       background-color: $blue;
     }
     &.content {
-      width: 94%;
+      width: calc(100% - 80px);
       background-color: $white;
+      min-height: 100vh;
     }
   }
 }

@@ -1,8 +1,12 @@
 $white: #ffffff;
 $light-blue: #504da8;
 .flex-container {
-  display: flex;
-  flex-direction: column;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
   & > div {
     width: 45px;
     height: 45px;
@@ -12,8 +16,8 @@ $light-blue: #504da8;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    &:focus{
-        outline: none;
+    &:focus {
+      outline: none;
     }
     &.menu {
       color: $white;
