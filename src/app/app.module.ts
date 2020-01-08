@@ -9,6 +9,7 @@ import { SettingsComponent } from "./settings/settings.component";
 import { NotificationsComponent } from "./notifications/notifications.component";
 import { DetailsComponent } from "./details/details.component";
 import { TrainersComponent } from './trainers/trainers.component';
+import { DayComponent } from './day/day.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TrainersComponent } from './trainers/trainers.component';
     SettingsComponent,
     NotificationsComponent,
     DetailsComponent,
-    TrainersComponent
+    TrainersComponent,
+    DayComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

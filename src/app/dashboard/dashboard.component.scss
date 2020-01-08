@@ -7,7 +7,6 @@ $light-bg: #f9fafc;
 .dashboard {
   .left-section {
     padding: 20px 25px;
-    height: 100vh;
     background-color: $light-white;
     .header {
       margin-bottom: 20px;
@@ -119,7 +118,6 @@ $light-bg: #f9fafc;
   }
   .right-section {
     padding: 20px 25px;
-    height: 100vh;
     background-color: $white;
     .header {
       display: block;
@@ -159,22 +157,23 @@ $light-bg: #f9fafc;
         }
       }
     }
-
-    .trainers{
-      .heading{
+    .today {
+    }
+    .trainers,
+    .today {
+      .heading {
         position: relative;
-        span{
+        span {
           font-size: 12px;
           font-weight: 600;
           color: #000000;
         }
-        i{
-          float: right;
-          color: $light-grey;
+        i {
+          color: #adb5bd;
           font-size: 12px;
           position: absolute;
           top: 53%;
-          right: 0;
+          right: 20px;
           transform: translateY(-50%);
         }
       }
